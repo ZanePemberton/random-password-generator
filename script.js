@@ -1,5 +1,8 @@
-// password choice variables
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
 
+
+// password choice variables
 var lower = "abcdefghijklmnopqrstuvwxyz";
 var upper = "ABCDEFGIJKLMNOPQRSTUVWXYSZ";
 var special = "!@#$%^&*()-_+={}[]|:<>?,.'";
@@ -12,10 +15,10 @@ var upperSelection = false;
 var speacialSelection = false;
 var numberSelection = false;
 
-// function to generate random password
-
+// function generates random password
 function generate() {
     var confirmLength = "";
+
 // user inputs how many numbers they want for password
     while (isNaN(confirmLength) || confirmLength < 8 || confirmLength > 128) {
         confirmLength = prompt("How many numbers would you like your password to contain (Between 8 - 128)");
@@ -45,4 +48,24 @@ function generate() {
             alert("Must choose at least one character type")
         }     
     }
-}    
+
+// generate random password
+var characters = "";
+characters += (lowerSelection ? lower : "");
+characters += (upperSelection ? upper : "");
+characters += (specialSelection ? special : "");
+characters += (numberSelection ? numbers : "");
+
+pwd = password(confirmLength, characters);
+
+document.getElementById("password").innerHTML = pwd;
+
+}
+
+function password(l, characters) {
+    var pwd = '';
+    for (var i = 0; i < l; ++i) {
+        pwd += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return pwd;
+}
