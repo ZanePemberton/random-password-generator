@@ -12,7 +12,7 @@ var pwd = "";
 
 var lowerSelection = false;
 var upperSelection = false;
-var speacialSelection = false;
+var specialSelection = false;
 var numberSelection = false;
 
 // function generates random password
