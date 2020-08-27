@@ -4,5 +4,5 @@ With this random password generator you as an employer can have full certainty t
 <img width="150" src="C:\Users\ZaneP\Desktop\random-password-generator\images\random-password-generator.img.png"
 alt="secure random geneated password appering on screen">
 
-<img wodth="150" src="C:\Users\ZaneP\Desktop\random-password-generator\images\Screenshot (7).png"
+<img width="150" src="C:\Users\ZaneP\Desktop\random-password-generator\images\Screenshot (7).png"
 alt="webpage before random password is generated">
